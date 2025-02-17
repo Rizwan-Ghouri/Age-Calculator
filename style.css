@@ -19,6 +19,9 @@
             margin: 10px;
             padding: 5px;
         }
+        #show{
+            font-size: x-large;
+        }
     }
     .btn{
         width: 40%;
