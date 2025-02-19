@@ -9,7 +9,7 @@ get_Age.addEventListener("click", () => {
 
     if(inpCur != "" && inpbir != ""){
         let minusvalue = inpCur - inpbir
-        show.innerText = minusvalue
+        show.innerText = `Age ${minusvalue}`
     }else{
         show.innerText = "please inpur filled"
     }
