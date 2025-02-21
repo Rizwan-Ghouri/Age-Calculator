@@ -7,13 +7,15 @@ get_Age.addEventListener("click", () => {
     let inpbir = inpbirth.value
     let inpCur = inpcurrent.value
 
-    if(inpCur != "" && inpbir != ""){
-        let minusvalue = inpCur - inpbir
-        show.innerText = `Age ${minusvalue}`
-    }else{
+    if (inpCur != "" && inpbir != "") {
+        const startYear = new Date(`${inpbir}`).getFullYear();
+        const endYear = new Date(`${inpCur}`).getFullYear();
+        let minusvalue = endYear - startYear;        
+    const startmilli = new Date(`${inpbir}`).getTime();
+    const endmilli = new Date(`${inpCur}`).getTime ();
+    const millisecondsDifference = (minusvalue)/ (1000 * 60 );
+        show.innerText = `Age ${minusvalue},${millisecondsDifference}`
+    } else {
         show.innerText = "please inpur filled"
     }
-
-    
-
 })
