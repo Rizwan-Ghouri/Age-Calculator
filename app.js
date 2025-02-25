@@ -22,11 +22,12 @@ get_Age.addEventListener("click", () => {
         const diffHours = diffMinutes / 60;
         const diffDays = diffHours / 24;
 
-        console.log(`Milliseconds: ${diffMilliseconds}`);
-        console.log(`Seconds: ${diffSeconds}`);
-        console.log(`Minutes: ${diffMinutes}`);
-        console.log(`Hours: ${diffHours}`);
-        console.log(`Days: ${diffDays}`);
+        // console.log(`Milliseconds: ${diffMilliseconds}`);
+        // console.log(`Seconds: ${diffSeconds}`);
+        // console.log(`Minutes: ${diffMinutes}`);
+        // console.log(`Hours: ${diffHours}`);
+        // console.log(`Days: ${diffDays}`);
+        
         show.innerHTML = `
                     <div class="dataShow">Age <br> ${minusYear}</div>
                     <div class="dataShow">Days <br> ${diffDays}</div>
