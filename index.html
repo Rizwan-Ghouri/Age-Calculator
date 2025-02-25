@@ -11,11 +11,13 @@
     <div class="main">
         <div class="divinp">
             <h1 class="heading">Age Calculator</h1>
-            <input type="datetime-local" class="inp" id="inpbirth" placeholder="Enter birthday year" autocomplete="off">
-            <input type="datetime-local" class="inp" id="inpcurrent" placeholder="Enter current year" autocomplete="off">
-            <button class="btn" id="get_Age">get Age</button>
+            <input type="text" class="inp" id="inpbirth"  onfocus="this.type='datetime-local'" onblur="this.type='datetime-local'" placeholder="Enter birthday year" autocomplete="off">
+            <input type="text" class="inp" id="inpcurrent" onfocus="this.type='datetime-local'" onblur="this.type='datetime-local'" placeholder="Enter current year" autocomplete="off">
+            <button class="btn" id="get_Age">Get</button>
             <div class="divinppara">
-                <p id="show" class="show">No message</p>
+                <div id="show" class="mainshow">
+                    No message
+                </div>
             </div>
             
         </div>
